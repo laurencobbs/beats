@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+
+  body{
+    background: black;
+}
+
+  .container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+  }
+
+  .menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+  }
+
+  nav{
+    flex: 1;
+    text-align: right;
+  }
+
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+ nav ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: 14px;
+ }
+
+ nav ul li a:hover{
+   color: darkgrey;
+ }
+
+ .row{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 100px 0;
+}
+
+.col-1{
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
+}
+
+.title{
+  position: absolute;
+  font-size: 130px;
+  top: -3.3rem;
+  left: 6rem;
+  line-height: 6rem;
+  background: linear-gradient(to right, #616161, #131313);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.col-1 h2{
+  position: relative;
+  font-size: 65px;
+}
+
+.col-1 h3{
+  font-size: 25px;
+  font-weight: 100;
+  color: darkgrey;
+  margin: 20px 0 10px;
+}
+
+.col-1 h4{
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+button{
+  width: 140px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: white;
+  background: linear-gradient(to right, #666565, #181818);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.col-1::after{
+  content: '';
+  width: 10px;
+  height: 65%;
+  background: linear-gradient(#666565, #181818);
+  position: absolute;
+  left: -40px;
+  top: 23px;
+}
+
+.col-2{
+  position: relative;
+  flex-basis: 65%;
+  display: flex;
+  align-items: center;
+}
+
+.col-2 .headset{
+  width: 60%;
+}
+
+.col-2 .headset1{
+  width: 50%;
+}
+
+.social-links img{
+  margin: 15px;
+  cursor: pointer;
+}
+
+.social-links{
+  margin-top: -7.5%;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width:700px){
+  nav ul{
+    width: 100%;
+    background: linear-gradient(#666565, #181818);
+    position: absolute;
+    top: 85px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+.menu-icon{
+    display: block;
+  }
+
+  #menuList{
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .row{
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+
+  .col-2{
+    flex-basis: 100%;
+    margin-bottom: 50px;
+    margin-right: 30px;
+  }
+
+  .col-1{
+    flex-basis: 100%;
+  }
+
+  .col-1 h2{
+    font-size: 35px;
+  }
+
+  .col-1 h3{
+    font-size: 14px;
+  }
+
+  .col-1::after{
+    height: 60%;
+    top: 13px;
+  }
+
+  .title{
+    font-size: 50px;
+    left: 3rem;
+    top: -2.8rem;
+  }
+}
+
+
+
+
+
+
+
+
+  
+
+  
